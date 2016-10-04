@@ -4,6 +4,8 @@
  */
 (function (global) {
   System.config({
+    transpiler: 'typescript',
+
     paths: {
       // paths serve as alias
       'npm:': 'node_modules/'
@@ -12,15 +14,18 @@
     map: {
       // our app is within the app folder
       app: 'app',
+
+      typescript: 'npm:typescript/lib/typescript.js',
+
       // angular bundles
-      '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
-      '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
-      '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
-      '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
-      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
-      '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-      '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-      '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      '@angular/core': 'npm:@angular/core',
+      '@angular/common': 'npm:@angular/common',
+      '@angular/compiler': 'npm:@angular/compiler',
+      '@angular/platform-browser': 'npm:@angular/platform-browser',
+      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic',
+      '@angular/http': 'npm:@angular/http',
+      '@angular/router': 'npm:@angular/router',
+      '@angular/forms': 'npm:@angular/forms',
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
@@ -29,6 +34,38 @@
     packages: {
       app: {
         main: './main.js',
+        defaultExtension: 'js',
+      },
+      '@angular/core': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/common': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/compiler': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/platform-browser': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/platform-browser-dynamic': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/http': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/router': {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      '@angular/forms': {
+        main: 'index.js',
         defaultExtension: 'js'
       },
       rxjs: {
