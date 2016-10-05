@@ -1,8 +1,8 @@
 import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { WorkerAppModule } from '@angular/platform-webworker';
 import { AppComponent }   from './app.component';
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ WorkerAppModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
