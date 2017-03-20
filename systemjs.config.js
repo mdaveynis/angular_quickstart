@@ -39,43 +39,43 @@
         defaultExtension: 'js',
       },
       '@angular/core': {
-        main: 'index.js',
+        main: '@angular/core.js',
         defaultExtension: 'js'
       },
       '@angular/common': {
-        main: 'index.js',
+        main: '@angular/common.js',
         defaultExtension: 'js'
       },
       '@angular/compiler': {
-        main: 'index.js',
+        main: '@angular/compiler.js',
         defaultExtension: 'js'
       },
       '@angular/platform-browser': {
-        main: 'index.js',
+        main: '@angular/platform-browser.js',
         defaultExtension: 'js'
       },
       '@angular/platform-browser-dynamic': {
-        main: 'index.js',
+        main: '@angular/platform-browser-dynamic.js',
         defaultExtension: 'js'
       },
       '@angular/http': {
-        main: 'index.js',
+        main: '@angular/http.js',
         defaultExtension: 'js'
       },
       '@angular/router': {
-        main: 'index.js',
+        main: '@angular/router.js',
         defaultExtension: 'js'
       },
       '@angular/forms': {
-        main: 'index.js',
+        main: '@angular/forms.js',
         defaultExtension: 'js'
       },
       '@angular/platform-webworker': {
-        main: 'index.js',
+        main: '@angular/platform-webworker.js',
         defaultExtension: 'js'
       },
       '@angular/platform-webworker-dynamic': {
-        main: 'index.js',
+        main: 'platform-webworker-dynamic.js',
         defaultExtension: 'js'
       },
       rxjs: {
