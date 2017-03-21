@@ -875,6 +875,9 @@ function addTarget(e, serializedEvent) {
         if (target.files) {
             serializedEvent['target']['files'] = target.files;
         }
+        if (target.checked !== undefined) {
+            serializedEvent['target']['checked'] = target.checked;
+        }
     }
     return serializedEvent;
 }
