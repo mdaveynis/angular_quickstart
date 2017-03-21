@@ -26,7 +26,7 @@
       '@angular/http': 'npm:@angular/http',
       '@angular/router': 'npm:@angular/router',
       '@angular/forms': 'npm:@angular/forms',
-      '@angular/platform-webworker': 'npm:@angular/platform-webworker',
+      '@angular/platform-webworker': 'patches',
       '@angular/platform-webworker-dynamic': 'npm:@angular/platform-webworker-dynamic',
       // other libraries
       'rxjs':                      'npm:rxjs',
@@ -70,8 +70,8 @@
         main: '@angular/forms.js',
         defaultExtension: 'js'
       },
-      '@angular/platform-webworker': {
-        main: '@angular/platform-webworker.js',
+      'patches': {
+        main: './platform-webworker.js',
         defaultExtension: 'js'
       },
       '@angular/platform-webworker-dynamic': {

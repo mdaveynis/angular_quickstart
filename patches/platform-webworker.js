@@ -875,6 +875,9 @@ function addTarget(e, serializedEvent) {
         if (target.files) {
             serializedEvent['target']['files'] = target.files;
         }
+        if (target.valueAsDate !== undefined) {
+            serializedEvent['target']['valueAsDate'] = target.valueAsDate;
+        }
     }
     return serializedEvent;
 }
